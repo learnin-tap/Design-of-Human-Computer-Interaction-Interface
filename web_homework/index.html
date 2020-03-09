@@ -1,0 +1,98 @@
+<!DOCTYPE html>avavaav.clav-container
+<html>
+
+	<head>
+		<!--480*800-->
+		<!--字体大小在PC端显示最小是12px-->
+		<meta charset="utf-8" />
+		<!--当初始比例为1时，就是设备本身宽度，但是为了兼容各种浏览器，device-width和initial-scale属性都写上-->
+		<meta name="viewport" content="width:device-width,
+			initial-scale=1.0,
+			user-scalable=no,maximum-scale=1,minimum-scale=1," />
+		<!--user-scalable=no和maximum-scale=1,minimum-scale=1表示一样，为了兼容性都写成，形成规范，但是即使这样写有的浏览器仍允许用户有缩放操作-->
+
+		<title>123</title>
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+
+		<header class="header-container">
+			<div class="container">
+				<div class="row">
+					<div class="header-logo-container col-8 col-md-3">
+						<a href="./index.html" class="header-logo">
+							<img src="img/logo.svg" alt="cellphone" />
+						</a>
+					</div>
+
+					<div class="header-btn-container col-4 col-md-none">
+						<!--button的type属性最好每次都加上button，否则有的浏览器给的默认值可能是submit-->
+						<button type="button" class="btn-toggle" id="btn-toggle">
+							<span class="btn-toggle-bar"></span>  
+							<span class="btn-toggle-bar"></span> 
+							<span class="btn-toggle-bar"></span>
+						</button>
+					</div>
+					<nav class="header-nav-container col-md-9 d-none d-md-block">
+						<ul class="header-nav">
+							<li class="header-nav-item">
+								<a href="###" class="header-nav-link">手机&amp;平板</a>
+							</li>
+							<li class="header-nav-item">
+								<a href="###" class="header-nav-link">电视&amp;影音</a>
+							</li>
+							<li class="header-nav-item">
+								<a href="###" class="header-nav-link">生活家电</a>
+							</li>
+							<li class="header-nav-item">
+								<a href="###" class="header-nav-link">电脑/办公/存储</a>
+							</li>
+							<li class="header-nav-item">
+								<a href="###" class="header-nav-link">网上商城</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<nav class="nav-container d-md-none" id="nav">
+			<ul class="container">
+				<li>
+					<a href="###" class="nav-link">手机&amp;平板</a>
+				</li>
+				<!--设置rem适配-->
+				<li>
+					<a href="###" class="nav-link">电视&amp;影音</a>
+				</li>setRemUnit()
+				<li>
+					<a href="###" class="nav-link">生活家电</a>
+				</li>
+				<!--每次窗口改变都执行一下-->
+				<li>
+					<a href="###" class="nav-link">电脑/办公/存储</a>
+				</li>window.onresize = setRemUnit()
+				<li>
+					<a href="###" class="nav-link">网上商城</a>
+				</li>
+			</ul>
+		</nav>
+
+		<script>
+			var nav = document.getElementById('nav');
+			var navExtendedClassName = 'nav-container-extended';
+
+			document.getElementById('btn-toggle').onclick = function() {
+				// nav.className += ' ' + navExtendedClassName;
+				if(nav.classList.contains(navExtendedClassName)) { // 收起
+					nav.classList.remove(navExtendedClassName);
+				} else { // 展开
+					nav.classList.add(navExtendedClassName);
+				}
+			};
+		</script>
+	</body>
+</html>
