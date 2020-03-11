@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width:device-width,
+			initial-scale=1.0,
+			user-scalable=no,maximum-scale=1,minimum-scale=1," />
+		<title>微江财</title>
+	</head>
+	<style type="text/css">
+		* {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            font-size: 12px;
+            color: #686868;
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+        }
+
+        /*html {
+            height: 100%;
+        }*/
+        body {
+        	background-color: #F7F7F7;
+            color: #595B66;
+            display: flex;
+            flex-direction: column;
+            /*min-height: 100%;*/
+        }
+        
+		.header-container{
+			display: flex;
+			justify-content: flex-start;
+           	align-items: center;
+			line-height: 100px;
+			height: 100px;
+			background-color:#EFEFF4;
+			border: none;
+		}
+		.header-container img{
+			margin-left: 5%;
+			width: 50px;
+			height: 50px;
+		}
+		.name{
+			text-align: center;
+			margin-top: -60px;
+			margin-bottom: 50px;
+		}
+		.name span{
+			font-size: 24px;
+			font-weight: bold;
+		}
+		
+		.main{
+			/*height: 500px;*/
+			margin-bottom: 50px;
+		}
+		.welcome{
+			display: block;
+			width: 90%;
+			margin-left: 5%;
+			border-radius: 7px;
+			box-shadow: 0px 0px 1px 1px  #F6F8F8;
+			height: 20%;
+		}
+		.dots{
+			text-align: center;
+			/*height: 50px;*/
+			/*background-color: red;*/
+		}
+		.dots span{
+			display: inline-block;
+			border-radius: 50%;
+			width: 10px;
+			height: 10px;
+			background-color: #ACACAC;
+			margin-left: 5px;
+			margin-top: 8px;
+			
+		}
+		.select{
+			background-color:#000000;
+		}
+		
+		.grids{
+			width: 90%;
+			margin-left: 5%;
+			margin-top: 10px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		
+		.grid{
+			cursor: pointer;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+            align-items: center;
+			background-color: #fff;
+			border-radius: 7px;
+			box-shadow: 0px 0px 1px 1px  #F6F8F8;
+			width: 100px;
+			height: 60px;
+			margin-top: 15px;
+		}
+		.grids img{
+			width: 50px;
+			height: 50px;
+		}
+		
+		
+		
+		
+		
+		
+		
+		.tabbar-container{
+			position: fixed;
+			bottom: 0px;
+			width: 100%;
+			height: 50px;
+			background-color: #fff;
+		}
+		
+		.tabbar{
+			display: flex;
+			height: 100%;
+		}
+		.tabbar-item{
+			flex: 1;
+			
+		}
+		.tabbar-link{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+		.tabbar-link img{
+			right: 200px;
+			width: 24px;
+			height: 24px;
+		}
+		.tabbar-link span{
+			font-size: 12px;
+		}
+		.tabbar-item-acitve .tabbar-link{
+			color: #de181b;		
+		}
+	</style>
+	<body>
+		<header class="header">
+			
+			<div class="header-container">
+				<img src="img/avatar.png"/>
+			</div>
+			<div class="name">
+				<span>江西财经大学</span>
+			</div>
+		</header>
+		<div class="main">
+			<img class="welcome" src="img/welcome.png" alt="微江财" />
+			<div class="dots">
+				<span style="background-color:#000000;"></span>
+				<span></span>
+			</div>
+			<div class="grids">
+				<div class="grid">
+					<img src="img/grids/calendar.png"/>
+					<span>我的</span>
+				</div>
+				<div class="grid">
+					<img src="img/grids/calendar.png"/>
+					<span>我的</span>
+				</div>
+				<div class="grid">
+					<img src="img/grids/calendar.png"/>
+					<span>我的</span>
+				</div>
+				<div class="grid">
+					<img src="img/grids/calendar.png"/>
+					<span>我的</span>
+				</div>
+				<div class="grid">
+					<img src="img/grids/calendar.png"/>
+					<span>我的</span>
+				</div>
+				<div class="grid">
+					<img src="img/grids/calendar.png"/>
+					<span>我的</span>
+				</div>
+				<div class="grid">
+					<img src="img/grids/calendar.png"/>
+					<span>我的</span>
+				</div>
+				<div class="grid">
+					<img src="img/grids/calendar.png"/>
+					<span>我的</span>
+				</div>
+				<div class="grid">
+					<img src="img/grids/calendar.png"/>
+					<span>我的</span>
+				</div>
+				<div class="grid">
+					<img src="img/grids/calendar.png"/>
+					<span>我的</span>
+				</div>
+				<div class="grid">
+					<img src="img/grids/calendar.png"/>
+					<span>我的</span>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<footer class="tabbar-container">
+			<ul class="tabbar">
+				<li class="tabbar-item tabbar-item-acitve">
+					<a href="#" class="tabbar-link">
+						<img src="img/index_selected.png"/>
+						<span>首页</span>
+					</a>
+				</li>
+				<li class="tabbar-item">
+					<a href="#" class="tabbar-link">
+						<img src="img/me.png"/>
+						<span>我的</span>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+
+</html>
