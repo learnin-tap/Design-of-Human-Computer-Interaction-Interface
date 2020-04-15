@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>响应式布局</title>
+	<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid-flex.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="container">
+            <div class="row">
+                <div class="header-logo-container col-8 col-md-3">
+                    <a href="./index.html" class="header-logo">
+						<img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header-btn-container col-4 d-md-none">
+                    <button type="button" class="btn-toggle" id="btn-toggle">
+                        <span class="btn-toggle-bar"></span>
+                        <span class="btn-toggle-bar"></span>
+                        <span class="btn-toggle-bar"></span>
+                    </button>
+                </div>
+                <nav class="header-nav-container col-md-9 d-none d-md-block">
+                    <ul class="header-nav">
+                        <li class="header-nav-item">
+                            <a href="#" class="header-nav-link">&nbsp;&nbsp;古城印象&nbsp;&nbsp;</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#" class="header-nav-link">&nbsp;&nbsp;地理环境&nbsp;&nbsp;</a>
+							<ul><a href="#"></a>
+								<li><a href="#">位置境域</a></li>
+								<li><a href="#">气候特点</a></li>
+								<li><a href="#">地形</a></li>
+								<li><a href="#">水文</a></li>
+							</ul>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#" class="header-nav-link">&nbsp;&nbsp;主要景点&nbsp;&nbsp;</a>
+							<ul>
+								<li><a href="#">综述</a></li>
+								<li><a href="#">文化古迹</a></li>
+							</ul>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#" class="header-nav-link">&nbsp;&nbsp;民俗文化&nbsp;&nbsp;</a>
+							<ul>
+								<li><a href="#">民俗文化</a></li>
+								<li><a href="#">民族节日</a></li>
+								<li><a href="#">特色美食</a></li>
+								<li><a href="#">古城特产</a></li>
+							</ul>
+						</li>
+                        <li class="header-nav-item">
+                            <a href="#" class="header-nav-link">&nbsp;&nbsp;旅游信息&nbsp;&nbsp;</a>
+							<ul>
+								<li><a href="#">景点门票</a></li>
+								<li><a href="#">开放时间</a></li>
+								<li><a href="#">交通指南</a></li>
+							</ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-container d-md-none" id="nav">
+        <ul class="container">
+            <li><a href="#" class="nav-link">古城印象</a></li>
+            <li><a href="#" class="nav-link">地理环境</a></li>
+            <li><a href="#" class="nav-link">主要景点</a></li>
+            <li><a href="#" class="nav-link">民俗文化</a></li>
+            <li><a href="#" class="nav-link">旅游信息</a></li>
+        </ul>
+    </nav>
+
+    <div class="slider-container">
+        <div class="container">
+            <div class="row">
+                <div class="slider-text-container col-md-5 col-md-order-last">
+                    <h3 class="slider-title">古城胜地｜5A</h3>
+                    <h4 class="slider-subtitle">明天  在丽江一起醒来</h4>
+                    <div class="slider-btns">
+                        <a href="#" class="btn-rounded">旅行攻略</a>
+                        <a href="#" class="btn-rounded">查看地图</a>
+                    </div>
+                </div>
+                <div class="col-md-7 col-md-order-first">
+                    <img src="img/1.png" alt="cellphone">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <a href="#" class="product-item">
+                        <img src="img/2-1.png" alt="cellphone" class="product-img">
+                    </a>
+                </div>
+                <div class="col-md">
+                    <a href="#" class="product-item">
+                        <img src="img/2-2.png" alt="cellphone" class="product-img">
+                    </a>
+                </div>
+                <div class="col-md">
+                    <a href="#" class="product-item">
+                        <img src="img/2-3.png" alt="cellphone" class="product-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="backtop-container d-md-none">
+        <a href="#" class="btn-backtop">回到顶部</a>
+    </div>
+
+    <div class="helper-container">
+        <div class="container">
+            <div class="helper-info-container">
+				<p>*&nbsp;&nbsp; 明天在丽江一起醒来</p>
+                <p>*&nbsp;&nbsp; 一起在斑驳的青石板上踟蹰，</p>
+                <p>*&nbsp;&nbsp; 一起在四方街的小巷发呆到流泪，</p>
+                <p>*&nbsp;&nbsp; 一起在玉龙雪山刻下爱的誓言，</p>
+				<p>*&nbsp;&nbsp; 在老去之前，我们一起去丽江，寻找最原初的爱……</p>
+            </div>
+            <div class="row">
+                <div class="helper-backtop-container col-md-2 col-md-offset-10 d-none d-md-block">
+                    <a href="#" class="btn-backtop">回到顶部</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md">
+                    <h3 class="helper-list-title">网站地图</h3>
+                    <ul class="helper-list">
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">服务协议</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">侵权通知指引</a></li>
+                        <li><a href="#">旅行服务监督员</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h3 class="helper-list-title">旅行服务</h3>
+                    <ul class="helper-list">
+                        <li><a href="#">指南书</a></li>
+                        <li><a href="#">酒店预订</a></li>
+                        <li><a href="#">国际租车</a></li>
+                        <li><a href="#">机票火车票</a></li>
+                        <li><a href="#">超值景区门票</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h3 class="helper-list-title">丽江旅游网</h3>
+                    <ul class="helper-list">
+                        <li><a href="#">年轻旅游网站</a></li>
+                        <li><a href="#">旅行神器</a></li>
+                        <li><a href="#">丽江攻略大全</a></li>
+                        <li><a href="#">旅游产品供应商</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h3 class="helper-list-title">官方分享</h3>
+                    <ul class="helper-list">
+                        <li>
+                            <a href="#" class="btn-share btn-share-weixin"></a>
+                            <a href="#" class="btn-share btn-share-weibo"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <ul>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">服务条款</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">重要声明</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">隐私政策</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" class="footer-link">中国/中文 &gt;</a>
+                </div>
+            </div>
+            <div>
+                <p>马蜂窝网站UI + 阿里巴巴矢量图库素材 + flex容器布局 + 栅格系统 == 响应式网页大作业——丽江旅游网</p>
+                <p>版权所有，违者必究</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var nav = document.getElementById('nav');
+        var navExtendedClassName = 'nav-container-extended';
+
+        document.getElementById('btn-toggle').onclick = function() {
+            if (nav.classList.contains(navExtendedClassName)) { // 收起
+                nav.classList.remove(navExtendedClassName);
+            } else { // 展开
+                nav.classList.add(navExtendedClassName);
+            }
+        };
+    </script>
+</body>
+</html>
