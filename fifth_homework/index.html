@@ -1,25 +1,23 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
-
 	<head>
 		<title>校园墙 </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width:device-width,
 			initial-scale=1.0,
 			user-scalable=no,maximum-scale=1,minimum-scale=1," />
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
 
 	<body>
 		<header class="header">
 			<div class="header-container">
-				<img src="img/avatar.png" />
+				<img src="img/jufe_logo.jpg" />
 			</div>
 			<div class="name">
 				<span>江财留言墙</span>
 			</div>
 		</header>
-
 		<div id="form1">
 			<form action="" method="post" onsubmit="return checkForm(this)">
 				<br>
@@ -32,7 +30,7 @@
 				<div class="row">
 					<div class="select">
 						<span>学院</span><br>
-						<select>
+						<select id="select">
 							<option value="0">软件学院</option>
 							<option value="1">会计学院</option>
 							<option value="2">金融学院</option>
@@ -45,9 +43,8 @@
 						</select><br>
 					</div>
 				</div>
-
 				<div style="color: #999;margin-top: 20px;">内容：
-					<textarea id="text2"></textarea>
+					<textarea id="text2" maxlength="200" style="text-indent: 2em;"></textarea>
 				</div>
 				<div style="color: #999;margin-top:3px;" id="txt">还可以输入<span id="number">200</span>个字</div>
 				<div>
@@ -57,12 +54,12 @@
 			</form>
 			</div>
 			<br>
-			<div>
+			<div style="margin-bottom: 20px;">
 				<h3>查看留言</h3>
 				<ul id="list">
 					<li>
-						<h6>Gary<a href="javascript:;">删除</a></h6>
-						<p>春风十里，不如江财油有你~</p>
+						<h6>软件学院- Gary<a href="javascript:;">删除</a></h6>
+						<p>春风十里，不如江财有你~</p>
 					</li>
 				</ul>
 			</div>
@@ -74,17 +71,17 @@
 					var number = document.getElementById('number');
 					var txt = document.getElementById('txt');
 					var list = document.getElementById('list');
+					var select = document.getElementById("select")
 					var close = list.getElementsByTagName('a');
 					var oli = document.createElement('li');
-					oli.innerHTML = '<h6>' + nickName.value + '<a href="javascript:;">删除</a></h6><p>' + text2.value + '</p>';
-
+					oli.innerHTML = '<h6>' + select.options[select.selectedIndex].text + '-  ' + nickName.value + '<a href="javascript:;">删除</a></h6><p>' + text2.value + '</p>';
+					console.log(select.options[select.selectedIndex].text)
+					console.log(text2.value)
 					if(text2.value == '') {
 						alert('请输入内容');
-					} 
-					else if(nickName.value==''){
+					} else if(nickName.value == '') {
 						alert('请填写您的姓名')
-					}
-					else {
+					} else {
 						if(list.children.length == 0) {
 							list.appendChild(oli);
 							nickName.value = "";
@@ -99,7 +96,7 @@
 					};
 					for(var i = close.length - 1; i >= 0; i--) {
 						close[i].onclick = function() {
-//							this.alert('确定删除？');
+							//							this.alert('确定删除？');
 							list.removeChild(this.parentNode.parentNode);
 						}
 					};
@@ -110,15 +107,16 @@
 					var len = 200;
 					len = len - length;
 					if(len < 0) {
-//						text2.disabled="disabled";	//禁用
+						//						text2.disabled="disabled";	//禁用
 						txt.style.color = 'red';
+						len = 0
 					} else {
 						txt.style.color = '#ccc';
 					};
 					number.innerHTML = len;
 				}
 				text2.onfocus = function() {
-					time = setInterval(jishu, 50);
+					time = setInterval(jishu, 100);
 				}
 				text2.onblur = function() {
 					clearInterval(time);
