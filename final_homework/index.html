@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!-- font-awesome是一个CSS图标库 -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="libs/glide/glide.core.min.css">
+    <link rel="stylesheet" href="libs/glide/glide.theme.min.css">
     <link rel="stylesheet" href="style.css" />
     <title>布尔网络科技有限公司</title>
   </head>
@@ -27,6 +29,7 @@
           <div class="burger-line3"></div>   
       </div>
     </header>
+    
     <div class="glide">
         <!-- 轮播大图 -->
         <div class="glide__track" data-glide-el="track">
@@ -35,20 +38,21 @@
                     <div class="slide-caption">
                         <h1>用创新点缀人生，让科技融入理想</h1>
                         <h3>科技创新大平台，智慧生活新引擎。依靠科技进步推进经济跨越式发展。用创新点缀人生，让科技融入梦想</h3>
-                        <button class="explore-btn">探索更多</button>
-                        <div class="backdrop"></div>
-                        <img src="images/people-in-couch-1024248.jpg" alt="" />
-                    </div>   
+                        <button class="explore-btn">探索更多</button>                      
+                    </div>
+                    <div class="backdrop"></div>
+                    <img src="images/people-in-couch-1024248.jpg" alt="" />   
                 </div>
                 <div class="glide__slide">
-                    <div class="slide-caption">
+                    <div class="slide-caption left">
                         <h1>科技改变世界</h1>
                         <h3>立足科学发展，着力自主创新。加速科技进步，为全市经济社会发展提供有力支撑。凝聚科技创意</h3>
                         <button class="explore-btn">探索更多</button>
-                        <div class="backdrop"></div>
+                            
+                    </div> 
+                    <div class="backdrop"></div>
                         <!-- 浏览器解析，必须先静音才能自动播放 -->
-                        <video src="videos/working-man.mp4" muted autoplay loop></video>    
-                    </div>   
+                        <video src="videos/working-man.mp4" muted autoplay loop></video>  
                 </div>
             </div>
         </div>
@@ -56,13 +60,263 @@
         <div class="glide__arrows" data-glide-el="controls">
             <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&lt;</button>
             <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&gt;</button>
-        </div> 
+        </div>
         <!-- 轮播图下方圆点 -->
-        <div class="glide__bullets" data-glide-el="controls[nav">
-            <button class="glide_bullet" data-glide-dir="=0"></button>
-            <button class="glide_bullet" data-glide-dir="=1"></button>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
         </div>
     </div>  
+
+    <!-- 内容区 -->
+    <div class="content-wrapper">
+      <section class="about-us">
+        <h2 class="title1">关于我们</h2>
+        <p class="intro">
+          网络工的胡搜啊可能打算授课你看仓库说不出看见安居客爱似百汇
+        </p>
+        <div class="features">
+          <div class="feature">
+            <i class="fas fa-lightbulb"></i>
+            <h4 class="feature-title"></h4>  
+            <p class="feature-title">整合营销</p>
+            <p class="feature-content">的撒看不懂看吧大师课就能</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-shopping-cart"></i>
+            <h4 class="feature-title"></h4>  
+            <p class="feature-title">电子商务</p>
+            <p class="feature-content">的撒看不懂看吧大师课就能</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-desktop"></i>
+            <h4 class="feature-title"></h4>  
+            <p class="feature-title">网页设计</p>
+            <p class="feature-content">的撒看不懂看吧大师课就能</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-lightbulb"></i>
+            <h4 class="feature-title"></h4>  
+            <p class="feature-title">单身卡那可能是大赛</p>
+            <p class="feature-content">的撒看不懂看吧大师课就能</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-tachometer-alt"></i>
+            <h4 class="feature-title"></h4>  
+            <p class="feature-title">网站优化</p>
+            <p class="feature-content">的撒看不懂看吧大师课就能</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-lightbulb"></i>
+            <h4 class="feature-title"></h4>  
+            <p class="feature-title">单身卡那可能是大赛</p>
+            <p class="feature-content">的撒看不懂看吧大师课就能</p>
+          </div>
+        </div>
+      </section>
+      <section class="showcases section-bg">
+        <h2 class="title1">成功案例</h2>
+        <div class="filter-btns">
+          <!-- data-filter是一个选择器，标识类别, -->
+          <button class="filter-btn active" data-filter='*'>全部</button>
+          <button class="filter-btn" data-filter=".web">WEB</button>
+          <button class="filter-btn" data-filter=".mobile">移动</button>
+          <button class="filter-btn" data-filter=".science">科研</button>
+           
+        </div>
+        <div class="cases">
+          <div class="case-item web science">
+            <img src="images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg" alt="">
+          </div>  
+          <div class="case-item web science">
+            <img src="images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg" alt="">
+          </div>
+          <div class="case-item web">
+            <img src="images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg" alt="">
+          </div>
+          <div class="case-item web">
+            <img src="images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg" alt="">
+          </div>
+          <div class="case-item mobile">
+            <img src="images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg" alt="">
+          </div>
+          <div class="case-item science">
+            <img src="images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg" alt="">
+          </div>
+          <div class="case-item mobile web science">
+            <img src="images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg" alt="">
+          </div>
+          <div class="case-item mobile">
+            <img src="images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg" alt="">
+          </div>
+
+        </div>
+      </section>
+      <section class="service">
+        <h2 class="title1">服务流程</h2>
+        <p class="intro">迪士尼反馈南大街SaaS大赛爱我就单独</p>
+        <div class="services">
+          <div class="service-item">
+            <i class="fas fa-comments"></i>
+            <h2 class="service-title">需求沟通</h2>
+            <p class="service-content">大厦卡洒出不算比·纳斯卡南沙街·茶水间··1</p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-comments"></i>
+            <h2 class="service-title">需求沟通</h2>
+            <p class="service-content">大厦卡洒出不算比·纳斯卡南沙街·茶水间··1</p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-comments"></i>
+            <h2 class="service-title">需求沟通</h2>
+            <p class="service-content">大厦卡洒出不算比·纳斯卡南沙街·茶水间··1</p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-comments"></i>
+            <h2 class="service-title">需求沟通</h2>
+            <p class="service-content">大厦卡洒出不算比·纳斯卡南沙街·茶水间··1</p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-comments"></i>
+            <h2 class="service-title">需求沟通</h2>
+            <p class="service-content">大厦卡洒出不算比·纳斯卡南沙街·茶水间··1</p>
+          </div>
+
+        </div>
+      </section>
+      <section class="team-intro section-bg">
+        <h2 class="title1">团队介绍</h2>
+        <div class="team-members">
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="images/man-wearing-black-suit-2955376.jpg" alt="">
+            </div>
+            <h4 class="name">张书记</h4>
+            <p class="posiotion">我我南山郡</p>
+            <ul class="social-links">
+              <li><a href=""><i class="fab fa-weixin"></i></a></li>
+              <li><a href=""></a><i class="fab fa-weibo"></i></a></li>
+              <li><a href=""></a><i class="fab fa-github"></i></a></li>
+              <li><a href=""></a><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="images/man-wearing-black-suit-2955376.jpg" alt="">
+            </div>
+            <h4 class="name">张书记</h4>
+            <p class="posiotion">我我南山郡</p>
+            <ul class="social-links">
+              <li><a href=""><i class="fab fa-weixin"></i></a></li>
+              <li><a href=""></a><i class="fab fa-weibo"></i></a></li>
+              <li><a href=""></a><i class="fab fa-github"></i></a></li>
+              <li><a href=""></a><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="images/man-wearing-black-suit-2955376.jpg" alt="">
+            </div>
+            <h4 class="name">张书记</h4>
+            <p class="posiotion">我我南山郡</p>
+            <ul class="social-links">
+              <li><a href=""><i class="fab fa-weixin"></i></a></li>
+              <li><a href=""></a><i class="fab fa-weibo"></i></a></li>
+              <li><a href=""></a><i class="fab fa-github"></i></a></li>
+              <li><a href=""></a><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="images/man-wearing-black-suit-2955376.jpg" alt="">
+            </div>
+            <h4 class="name">张书记</h4>
+            <p class="posiotion">我我南山郡</p>
+            <ul class="social-links">
+              <li><a href=""><i class="fab fa-weixin"></i></a></li>
+              <li><a href=""></a><i class="fab fa-weibo"></i></a></li>
+              <li><a href=""></a><i class="fab fa-github"></i></a></li>
+              <li><a href=""></a><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </section>
+      <section class="data-section">
+        <div class="data-piece">
+          <i class="fas fa-code"></i>
+          <div class="num">156</div>
+          <div class="data-desc">行代码</div>
+        </div>
+        <div class="data-piece">
+          <i class="fas fa-award"></i>
+          <div class="num">556</div>
+          <div class="data-desc">个奖项</div>
+        </div>
+        <div class="data-piece">
+          <i class="fas fa-laugh-wink"></i>
+          <div class="num">956</div>
+          <div class="data-desc">位客户</div>
+        </div>
+        <div class="data-piece">
+          <i class="fas fa-folder"></i>
+          <div class="num">156</div>
+          <div class="data-desc">个项目</div>
+        </div>
+      </section>
+      <section class="company-activities">
+        <h2 class="title1">公司动态</h2>
+        <p class="intro">dsak的巴萨及第三遍就看</p>
+        <div class="activities">
+          <div class="activity">
+            <div class="act-image-wrapper">
+              <img src="images/activity01-image.jpg" alt="">
+            </div>
+            <div class="meta">
+              <p class="date-published">
+                <i class="fa fa-calendar"></i>2020年06月05日
+              </p>
+              <p class="comments"><i class="far fa-comments">33条评论</i></p>
+            </div>
+            <h2 class="act-title">不的撒快捷报道静安寺·但是</h2>
+            <article>dbkasj的不是JKB大萨看空间第三季·大赛赖和框架初三卡大可好看·大厦卡保卫部卡巴斯基看不见看不卡睡不醒阿基</article>
+            <button class="readmore-btn">阅读更多</button>
+          </div>
+          <div class="activity">
+            <div class="act-image-wrapper">
+              <img src="images/activity01-image.jpg" alt="">
+            </div>
+            <div class="meta">
+              <p class="date-published">
+                <i class="fa fa-calendar"></i>2020年06月05日
+              </p>
+              <p class="comments"><i class="far fa-comments">33条评论</i></p>
+            </div>
+            <h2 class="act-title">不的撒快捷报道静安寺·但是</h2>
+            <article>dbkasj的不是JKB大萨看空间第三季·大赛赖和框架初三卡大可好看·大厦卡保卫部卡巴斯基看不见看不卡睡不醒阿基</article>
+            <button class="readmore-btn">阅读更多</button>
+          </div>
+          <div class="activity">
+            <div class="act-image-wrapper">
+              <img src="images/activity01-image.jpg" alt="">
+            </div>
+            <div class="meta">
+              <p class="date-published">
+                <i class="fa fa-calendar"></i>2020年06月05日
+              </p>
+              <p class="comments"><i class="far fa-comments">33条评论</i></p>
+            </div>
+            <h2 class="act-title">不的撒快捷报道静安寺·但是</h2>
+            <article>dbkasj的不是JKB大萨看空间第三季·大赛赖和框架初三卡大可好看·大厦卡保卫部卡巴斯基看不见看不卡睡不醒阿基</article>
+            <button class="readmore-btn">阅读更多</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <script src="libs/anime/anime.min.js"></script>
+    <script src="libs/glide/glide.min.js"></script>
+    <script src="libs/iostope/isotope.pkgd.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
