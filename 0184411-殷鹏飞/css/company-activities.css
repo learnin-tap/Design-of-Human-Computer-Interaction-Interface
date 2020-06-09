@@ -1,0 +1,78 @@
+
+/* ============= 公司动态 ================== */
+/* 公司动态 */
+.company-activities {
+  margin-top: 88px;
+}
+
+/* 动态栅格布局 */
+.activities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+}
+/* 动态 */
+.activity {
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  transition: 0.4s;
+}
+
+/* 动态图片容器 */
+.act-image-wrapper {
+  height: 255px;
+  overflow: hidden;
+  /* 抵消activity的padding */
+  margin: -24px;
+  margin-bottom: 0;
+}
+
+/* 动态图片 */
+.act-image-wrapper img {
+  min-height: 300px;
+  object-fit: cover;
+}
+
+/* 动态元数据 */
+.activity .meta {
+  margin-top: 12px;
+  margin-bottom: 16px;
+  color: var(--text-color-light-gray);
+  font-size: 12px;
+  display: flex;
+}
+
+/* 评论 */
+.activity .meta > p:last-child {
+  margin-left: 16px;
+}
+
+/* 动态标题 */
+.act-title {
+  color: var(--text-color-dark);
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+/* 动态摘要 */
+.activity article {
+  color: var(--text-color-gray);
+  letter-spacing: 0.54px;
+  line-height: 24px;
+}
+
+/* 阅读更多按钮 */
+.readmore-btn {
+  border: 0;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  padding: 6px 14px;
+  margin-top: 24px;
+}
+
+/* 动态鼠标移上时 */
+.activity:hover {
+  transform: translateY(-20px) scale(1.05);
+  box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.1);
+}

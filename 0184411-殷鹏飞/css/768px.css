@@ -1,0 +1,56 @@
+
+/* 小于768象素时 */
+@media (max-width: 768px) {
+  /* 区域的左右内边距设置为40象素 */
+  section,
+  .footer-menus {
+    padding: 0 40px;
+  }
+
+  /* 关于我们和业务流程设置为1列 */
+  .features,
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  /* 团队成员设置为1列 */
+  .team-members {
+    grid-template-columns: minmax(200px, 400px);
+    /* column-gap: 6vw;
+    row-gap: 36px; */
+  }
+
+  /* 数据部分设置为1列 */
+  .data-section {
+    grid-template-columns: 1fr;
+    /* 增加背景尺寸 */
+    background-size: 320%;
+  }
+  /* 公司动态设置为1列 */
+  .activities {
+    grid-template-columns: 1fr;
+    row-gap: 36px;
+  }
+
+  /* 成功案例图片显示为两列 */
+  .showcases .case-item {
+    width: calc(100vw / 2);
+    height: 30vw;
+  }
+
+  /* 底部菜单设置为3列 */
+  .footer-menus {
+    grid-template-columns: 2fr repeat(2, 1fr);
+    row-gap: 24px;
+  }
+
+  /* 联系我们占前两列 */
+  .contact-us {
+    grid-row: 1 / 3;
+  }
+
+  /* 菜单文字靠右对齐 */
+  .footer-menu {
+    text-align: right;
+  }
+}

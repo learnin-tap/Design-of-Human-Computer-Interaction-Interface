@@ -1,0 +1,50 @@
+
+/* ============= 关于我们 ================== */
+
+/* 关于我们 */
+.about-us {
+  padding-bottom: 32px;
+}
+
+/* 公司业务布局 */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 126px 126px;
+  column-gap: 5vw;
+  align-items: center;
+}
+
+/* 业务 */
+.feature {
+  display: grid;
+  /* 规划栅格，图标占两行，标题和内容各占一行 */
+  grid-template-areas:
+    "icon title"
+    "icon content";
+  /* 每列的宽度，第一列60象素，第二列占满剩余空间 */
+  grid-template-columns: 60px 1fr;
+  /* 三行 */
+  grid-template-rows: 1fr 3fr;
+}
+
+/* 图标 */
+.feature i.fas {
+  grid-area: icon;
+  font-size: 34px;
+  color: var(--primary-color);
+}
+
+/* 标题 */
+.feature-title {
+  grid-area: title;
+  font-size: 18px;
+  color: var(--text-color-darker);
+}
+
+/* 内容 */
+.feature-content {
+  grid-area: content;
+  color: var(--text-color-gray);
+  margin-top: 8px;
+}

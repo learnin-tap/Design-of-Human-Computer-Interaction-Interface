@@ -1,0 +1,97 @@
+
+/* ============= 底部区域 ================== */
+/* 底部 */
+footer {
+  margin-top: 124px;
+  background-color: #181818;
+  display: grid;
+  justify-items: center;
+  padding-top: 72px;
+  padding-bottom: 24px;
+}
+
+/* 底部菜单 */
+.footer-menus {
+  width: 100%;
+  max-width: 1180px;
+  display: grid;
+  /* 5列布局 */
+  grid-template-columns: 2fr repeat(4, 1fr);
+  padding: 0 80px;
+  position: relative;
+}
+
+/* 导航菜单，靠右对齐 */
+.footer-menu {
+  justify-self: end;
+}
+
+/* 一级菜单 */
+.menu-title {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* 联系我们，靠左对齐 */
+.contact-us {
+  justify-self: start;
+  color: var(--text-color-lightest);
+}
+
+/* 联系我们，文字 */
+.contact-us p:not(:first-child) {
+  padding-bottom: 16px;
+}
+
+/* 菜单项 */
+.menu-items li {
+  list-style: none;
+  padding-bottom: 8px;
+}
+/* 菜单链接 */
+.menu-items li a {
+  text-decoration: none;
+  font-weight: 300;
+  color: var(--text-color-lightest);
+}
+
+/* 备案信息 */
+.icp-info {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+/* 备案信息，版权信息 */
+.icp-info,
+.rights {
+  /* 占满整行，-1代表最后一个编号 */
+  grid-column: 1 / -1;
+  /* 居中对齐 */
+  justify-self: center;
+  color: white;
+}
+
+/* 返回顶部按钮，默认不显示 */
+.scrollToTop {
+  display: none;
+  position: relative;
+  z-index: 300;
+}
+
+/* 返回顶部按钮 */
+.scrollToTop a {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+}

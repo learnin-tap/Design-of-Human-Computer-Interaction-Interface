@@ -1,0 +1,81 @@
+
+/* ============= 团队介绍  ================== */
+/* 团队介绍 */
+.team-intro {
+  margin-top: 48px;
+  padding-top: 62px;
+  padding-bottom: 52px;
+}
+
+/* 团队成员容器 */
+.team-members {
+  display: grid;
+  /* 4列 */
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+  margin-top: 86px;
+}
+
+/* 团队成员 */
+.team-member {
+  background-color: white;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding-bottom: 28px;
+  /* 鼠标移过会放大并上移 */
+  transition: 0.4s;
+  display: grid;
+  justify-items: center;
+}
+
+/* 成员照片遮罩 */
+.profile-image {
+  overflow: hidden;
+}
+/* 成员照片 */
+.profile-image img {
+  width: 100%;
+  height: 264px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* 团队姓名 */
+.team-member .name {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color-dark);
+}
+
+/* 团队职位 */
+.team-member .position {
+  color: var(--text-color-dark-gray);
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+
+/* 社交账号 */
+.social-links {
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 42px;
+}
+/* 社交账号 */
+.social-links li {
+  list-style: none;
+}
+
+/* 社交账号图标 */
+.social-links li a {
+  color: var(--text-color-dark);
+  text-decoration: none;
+}
+
+/* 鼠标移过加动画 */
+.team-member:hover {
+  transform: translateY(-20px) scale(1.05);
+  box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.1);
+}

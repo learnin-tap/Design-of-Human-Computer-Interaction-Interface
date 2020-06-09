@@ -1,0 +1,33 @@
+
+/* 小于992象素时 */
+@media (max-width: 992px) {
+  /* 轮播标题字号缩小  */
+  .slide-caption h1 {
+    font-size: 48px;
+  }
+
+  .slide-caption h3 {
+    font-size: 18px;
+  }
+
+  /* 关于我们和业务流程设置为两列布局 */
+  .features,
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    /* 取消两行布局 */
+    grid-template-rows: unset;
+  }
+  /* 数据部分设置为两列布局 */
+  .data-section {
+    /* 每列最小宽度为200象素，最大为自动 */
+    grid-template-columns: repeat(2, minmax(200px, auto));
+    row-gap: 24px;
+    height: auto;
+    padding: 24px 0;
+    background-size: 200%;
+  }
+  /* 成功案例图片设置为3列 */
+  .showcases .case-item {
+    width: calc(100vw / 3);
+  }
+}
